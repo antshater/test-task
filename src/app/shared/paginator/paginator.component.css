@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+}
+
+.pagination > * {
+  padding: 10px;
+  cursor: pointer;
+  color: blue;
+}
+
+.pagination > *.active {
+  color: darkblue;
+}

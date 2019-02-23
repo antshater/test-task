@@ -1,0 +1,14 @@
+<h1>User list</h1>
+<ul>
+  <li *ngFor="let user of users$ | async">
+    <a [routerLink]="[user.id]" >
+      <div>
+        <img [src]="user.avatar" class="avatar"/>
+      </div>
+      <div>
+        {{ user.last_name }} {{ user.first_name }}
+      </div>
+    </a>
+  </li>
+</ul>
+<app-paginator [pagination]="response" ></app-paginator>
